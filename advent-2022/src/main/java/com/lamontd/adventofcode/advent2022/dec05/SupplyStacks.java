@@ -64,7 +64,7 @@ public class SupplyStacks {
     public void runCrateMover9000() {
         logger.info("Running through " + craneJobs.size() + " crane jobs as a CrateMover 9000");
         for (CraneJob job : craneJobs) {
-            logger.info("Moving " + job.getQuantity() + " crates from " + job.getSourceStack() + " to " + job.getDestinationStack());
+            logger.debug("Moving " + job.getQuantity() + " crates from " + job.getSourceStack() + " to " + job.getDestinationStack());
             CargoStack source = stackMap.get(job.getSourceStack());
             CargoStack destination = stackMap.get(job.getDestinationStack());
             for (int pulls = 0; pulls < job.getQuantity(); pulls++) {
@@ -109,6 +109,9 @@ public class SupplyStacks {
         }
     }
 
+    public void logCargoStack() {
+        stackMap.values().stream().forEach(cs -> logger.info(cs.toString()));
+    }
 
 
     public static void main(String[] args) throws IOException {
@@ -118,14 +121,15 @@ public class SupplyStacks {
 
         logger.info("Doing the sample setup...");
         warehouse.populateStackMap(new LocalResourceInput("day05/sample.txt"));
+        warehouse.logCargoStack();
         logger.info("Going through the initial moves for the CrateMover9000...");
         warehouse.runCrateMover9000();
+        warehouse.logCargoStack();
         logger.info("Initial top message is: " + warehouse.getTopMessage());
         logger.info("Resetting to move as a CrateMover9001...");
         warehouse.populateStackMap(new LocalResourceInput("day05/sample.txt"));
         warehouse.runCrateMover9001();
         logger.info("The top message is now " + warehouse.getTopMessage());
-        timer.finish();
 
         logger.info("Getting real..");
         warehouse.populateStackMap(new LocalResourceInput("day05/input.txt"));
@@ -135,5 +139,6 @@ public class SupplyStacks {
         warehouse.populateStackMap(new LocalResourceInput("day05/input.txt"));
         warehouse.runCrateMover9001();
         logger.info("The message is NOW " + warehouse.getTopMessage());
+        timer.finish();
     }
 }
