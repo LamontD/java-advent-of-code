@@ -6,42 +6,64 @@ import org.javatuples.Pair;
 import java.util.Objects;
 
 @Builder
-public class Coordinate {
-    private final Pair<Integer, Integer> coord;
+public class Coordinate implements Comparable<Coordinate> {
+    private int x;
+    private int y;
 
     public Coordinate() {
-        this.coord = new Pair<>(0, 0);
+        this.x = 0;
+        this.y = 0;
     }
 
     public Coordinate(int xCoord, int yCoord) {
-        this.coord = Pair.with(xCoord, yCoord);
+        this.x = xCoord; this.y = yCoord;
     }
 
-    public Coordinate(Pair<Integer, Integer> intPair) { this.coord = Pair.with(intPair.getValue0(), intPair.getValue1()); }
+    public Coordinate(Pair<Integer, Integer> intPair) {
+        this.x = intPair.getValue0();
+        this.y = intPair.getValue1();
+    }
 
-    public int getX() { return this.coord.getValue0(); }
-    public int getY() { return this.coord.getValue1(); }
+    public int getX() { return this.x; }
+    public int getY() { return this.y; }
 
-    public void setX(int x) { this.coord.setAt0(x); }
-    public void setY(int y) { this.coord.setAt1(y); }
+    public void setX(int xValue) { this.x = xValue; }
+    public void setY(int yValue) { this.y = yValue; }
 
-    public Pair<Integer, Integer> toPair() { return Pair.with(coord.getValue0(), coord.getValue1()); }
+    public void addX(int units) { x += units; }
+    public void addY(int units) { y += units; }
+
+    public void subtractX(int units) { x -= units; }
+    public void subtractY(int units) { y -= units; }
+
+    public Pair<Integer, Integer> toPair() { return Pair.with(x, y); }
+
+    public static Coordinate of(int x, int y) { return Coordinate.builder().x(x).y(y).build(); }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Coordinate that = (Coordinate) o;
-        return coord.equals(that.coord);
+        return x == that.x && y == that.y;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(coord);
+        return Objects.hash(x, y);
+    }
+
+    @Override
+    public int compareTo(Coordinate o) {
+        if (this == o) return 0;
+        if (this.x == o.x) {
+            return Integer.compare(this.y, o.y);
+        }
+        return Integer.compare(this.x, o.x);
     }
 
     @Override
     public String toString() {
-        return "(" + coord.getValue0() + "," + coord.getValue1() + ")";
+        return "(" + x + "," + y + ")";
     }
 }
