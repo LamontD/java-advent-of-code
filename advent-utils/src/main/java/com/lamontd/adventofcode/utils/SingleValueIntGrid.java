@@ -15,9 +15,14 @@ public abstract class SingleValueIntGrid {
             char[] rowChars = layout.get(row).toCharArray();
             intGrid[row] = new int[rowChars.length];
             for (int col = 0; col < rowChars.length; col++) {
-                intGrid[row][col] = Integer.parseInt(Character.toString(rowChars[col]));
+//                intGrid[row][col] = Integer.parseInt(Character.toString(rowChars[col]));
+                intGrid[row][col] = generateIntValueFromLayoutCharacter(row, col, rowChars[col]);
             }
         }
+    }
+
+    protected int generateIntValueFromLayoutCharacter(int row, int col, Character cellCharacter) {
+        return Integer.parseInt(Character.toString(cellCharacter));
     }
 
     protected List<CardinalDirections> calculateValidBasicCardinalDirections(Pair<Integer, Integer> point) {
