@@ -1,4 +1,4 @@
-package com.lamontd.adventofcode.advent2022.dec12.astar;
+package com.lamontd.adventofcode.utils.astar;
 
 import com.google.common.graph.ValueGraph;
 import com.lamontd.adventofcode.utils.Statistics;

@@ -1,4 +1,4 @@
-package com.lamontd.adventofcode.advent2022.dec12.astar;
+package com.lamontd.adventofcode.utils.astar;
 
 import com.google.common.graph.EndpointPair;
 import com.google.common.graph.ValueGraph;
@@ -7,6 +7,9 @@ import org.slf4j.LoggerFactory;
 
 import java.util.function.Function;
 
+/**
+ * Adopted from original algorithm from happycoders.eu to add support for my Coordinate classes.
+ */
 public class HeuristicForNodesWithCoordinate implements Function<NodeWithCoordinate, Double> {
     private static final Logger LOG =
             LoggerFactory.getLogger(HeuristicForNodesWithCoordinate.class);

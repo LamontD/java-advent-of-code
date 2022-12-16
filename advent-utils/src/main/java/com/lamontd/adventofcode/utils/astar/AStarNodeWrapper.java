@@ -1,5 +1,13 @@
-package com.lamontd.adventofcode.advent2022.dec12.astar;
+package com.lamontd.adventofcode.utils.astar;
 
+/**
+ * Data structure containing a node, its predecessor, its total cost from the start, its minimum
+ * remaining cost, and the cost sum.
+ *
+ * <p>Used by {@link AStarWithTreeSet}.
+ *
+ * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
+ */
 public class AStarNodeWrapper<N extends Comparable<N>> implements Comparable<AStarNodeWrapper<N>> {
     private final N node;
     private AStarNodeWrapper<N> predecessor;

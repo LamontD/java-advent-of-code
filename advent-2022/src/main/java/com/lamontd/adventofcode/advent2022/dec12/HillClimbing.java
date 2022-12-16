@@ -1,9 +1,9 @@
 package com.lamontd.adventofcode.advent2022.dec12;
 
 import com.google.common.graph.ValueGraph;
-import com.lamontd.adventofcode.advent2022.dec12.astar.AStarWithTreeSet;
-import com.lamontd.adventofcode.advent2022.dec12.astar.HeuristicForNodesWithCoordinate;
-import com.lamontd.adventofcode.advent2022.dec12.astar.NodeWithCoordinate;
+import com.lamontd.adventofcode.utils.astar.AStarWithTreeSet;
+import com.lamontd.adventofcode.utils.astar.HeuristicForNodesWithCoordinate;
+import com.lamontd.adventofcode.utils.astar.NodeWithCoordinate;
 import com.lamontd.adventofcode.utils.Coordinate;
 import com.lamontd.adventofcode.utils.LocalResourceInput;
 import com.lamontd.adventofcode.utils.ProblemTimer;

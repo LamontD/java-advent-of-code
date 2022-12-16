@@ -1,9 +1,17 @@
-package com.lamontd.adventofcode.advent2022.dec12.astar;
+package com.lamontd.adventofcode.utils.astar;
 
 import com.lamontd.adventofcode.utils.Coordinate;
 
 import java.util.Objects;
 
+/**
+ * Data structure for graph nodes containing a name and X/Y coordinates. The name is the "primary
+ * key" and used in the equals(), hashCode() and compareTo() method as unique ID.
+ *
+ * Modified from original code to support my Coordinate utility classes instead of x,y int values.
+ *
+ * @author <a href="sven@happycoders.eu">Sven Woltmann</a>
+ */
 public class NodeWithCoordinate implements Comparable<NodeWithCoordinate> {
     private final String name;
     private final Coordinate coord;
