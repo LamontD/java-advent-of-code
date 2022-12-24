@@ -18,4 +18,12 @@
         <maven.compiler.target>13</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.lamontd</groupId>
+            <artifactId>advent-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 </project>

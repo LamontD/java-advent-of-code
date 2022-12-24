@@ -31,7 +31,7 @@ public class TestReceivedSignalParsing {
         assertFalse(singleList.isEmpty());
         assertEquals(1, singleList.size());
         assertTrue(singleList.get(0) instanceof Integer);
-        assertEquals(singleList.get(0), 1);
+        assertEquals(9, singleList.get(0));
     }
 
     @Test
