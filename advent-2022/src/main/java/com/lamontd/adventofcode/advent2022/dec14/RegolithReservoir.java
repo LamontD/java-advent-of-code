@@ -1,6 +1,6 @@
 package com.lamontd.adventofcode.advent2022.dec14;
 
-import com.lamontd.adventofcode.utils.Coordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 import com.lamontd.adventofcode.utils.LocalResourceInput;
 import com.lamontd.adventofcode.utils.ProblemTimer;
 import org.apache.log4j.BasicConfigurator;

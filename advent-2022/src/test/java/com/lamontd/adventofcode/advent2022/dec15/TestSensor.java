@@ -1,7 +1,7 @@
 package com.lamontd.adventofcode.advent2022.dec15;
 
-import com.lamontd.adventofcode.utils.Coordinate;
-import com.lamontd.adventofcode.utils.CoordinateLine;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
+import com.lamontd.adventofcode.utils.coord.CoordinateLine;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.lamontd.adventofcode.advent2021.dec15;
 
-import com.lamontd.adventofcode.utils.Coordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

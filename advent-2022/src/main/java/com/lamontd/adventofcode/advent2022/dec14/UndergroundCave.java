@@ -1,9 +1,8 @@
 package com.lamontd.adventofcode.advent2022.dec14;
 
-import com.lamontd.adventofcode.utils.CardinalDirections;
-import com.lamontd.adventofcode.utils.Coordinate;
-import com.lamontd.adventofcode.utils.CoordinateUtils;
-import org.checkerframework.checker.units.qual.C;
+import com.lamontd.adventofcode.utils.coord.CardinalDirections;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
+import com.lamontd.adventofcode.utils.coord.CoordinateUtils;
 
 import java.util.HashMap;
 import java.util.List;

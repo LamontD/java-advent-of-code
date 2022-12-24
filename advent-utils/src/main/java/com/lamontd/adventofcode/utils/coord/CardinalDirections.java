@@ -1,4 +1,4 @@
-package com.lamontd.adventofcode.utils;
+package com.lamontd.adventofcode.utils.coord;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ public enum CardinalDirections {
     S(1, 0),
     SW(1, -1),
     W(0, -1);
-    private int rowAdjustment;
-    private int colAdjustment;
-    private CardinalDirections(int rowAdjustment, int colAdjustment) {
+    private final int rowAdjustment;
+    private final int colAdjustment;
+    CardinalDirections(int rowAdjustment, int colAdjustment) {
         this.rowAdjustment = rowAdjustment;
         this.colAdjustment = colAdjustment;
     }

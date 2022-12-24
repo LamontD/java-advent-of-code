@@ -1,6 +1,6 @@
 package com.lamontd.adventofcode.advent2022.dec17;
 
-import com.lamontd.adventofcode.utils.Coordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 import org.javatuples.Quartet;
 
 public class RowSpecification {

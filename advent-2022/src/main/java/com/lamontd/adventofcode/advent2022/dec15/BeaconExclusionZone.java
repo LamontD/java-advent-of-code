@@ -1,6 +1,8 @@
 package com.lamontd.adventofcode.advent2022.dec15;
 
 import com.lamontd.adventofcode.utils.*;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
+import com.lamontd.adventofcode.utils.coord.CoordinateLine;
 import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

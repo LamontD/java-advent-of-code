@@ -4,7 +4,7 @@ import com.google.common.graph.ValueGraph;
 import com.lamontd.adventofcode.utils.astar.AStarWithTreeSet;
 import com.lamontd.adventofcode.utils.astar.HeuristicForNodesWithCoordinate;
 import com.lamontd.adventofcode.utils.astar.NodeWithCoordinate;
-import com.lamontd.adventofcode.utils.Coordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 import com.lamontd.adventofcode.utils.LocalResourceInput;
 import com.lamontd.adventofcode.utils.ProblemTimer;
 import org.apache.log4j.BasicConfigurator;

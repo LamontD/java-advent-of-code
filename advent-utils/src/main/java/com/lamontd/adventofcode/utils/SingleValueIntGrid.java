@@ -1,5 +1,7 @@
 package com.lamontd.adventofcode.utils;
 
+import com.lamontd.adventofcode.utils.coord.CardinalDirections;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 import org.javatuples.Pair;
 
 import java.util.ArrayList;

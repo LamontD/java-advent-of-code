@@ -4,7 +4,7 @@ import com.google.common.graph.MutableValueGraph;
 import com.google.common.graph.ValueGraph;
 import com.google.common.graph.ValueGraphBuilder;
 import com.lamontd.adventofcode.utils.astar.NodeWithCoordinate;
-import com.lamontd.adventofcode.utils.Coordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 import com.lamontd.adventofcode.utils.SingleValueIntGrid;
 
 import java.util.ArrayList;

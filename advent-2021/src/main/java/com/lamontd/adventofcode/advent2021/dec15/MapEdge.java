@@ -1,6 +1,6 @@
 package com.lamontd.adventofcode.advent2021.dec15;
 
-import com.lamontd.adventofcode.utils.Coordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 import lombok.Builder;
 import lombok.Data;
 

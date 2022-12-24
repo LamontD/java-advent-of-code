@@ -1,8 +1,8 @@
 package com.lamontd.adventofcode.advent2022.dec15;
 
-import com.lamontd.adventofcode.utils.Coordinate;
-import com.lamontd.adventofcode.utils.CoordinateLine;
-import com.lamontd.adventofcode.utils.CoordinateUtils;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
+import com.lamontd.adventofcode.utils.coord.CoordinateLine;
+import com.lamontd.adventofcode.utils.coord.CoordinateUtils;
 
 import java.util.ArrayList;
 import java.util.List;

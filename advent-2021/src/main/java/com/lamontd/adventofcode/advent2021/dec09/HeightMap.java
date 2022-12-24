@@ -1,6 +1,6 @@
 package com.lamontd.adventofcode.advent2021.dec09;
 
-import com.lamontd.adventofcode.utils.CardinalDirections;
+import com.lamontd.adventofcode.utils.coord.CardinalDirections;
 import com.lamontd.adventofcode.utils.SingleValueIntGrid;
 import org.javatuples.Pair;
 import org.slf4j.Logger;

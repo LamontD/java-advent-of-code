@@ -1,6 +1,6 @@
 package com.lamontd.adventofcode.advent2022.dec09;
 
-import com.lamontd.adventofcode.utils.Coordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,4 @@
-package com.lamontd.adventofcode.utils;
+package com.lamontd.adventofcode.utils.coord;
 
 import lombok.Builder;
 import org.javatuples.Pair;

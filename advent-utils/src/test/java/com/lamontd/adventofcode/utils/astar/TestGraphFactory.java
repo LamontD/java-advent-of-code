@@ -3,9 +3,7 @@ package com.lamontd.adventofcode.utils.astar;
 import com.google.common.graph.MutableValueGraph;
 import com.google.common.graph.ValueGraph;
 import com.google.common.graph.ValueGraphBuilder;
-import com.lamontd.adventofcode.utils.Coordinate;
-import com.lamontd.adventofcode.utils.astar.HeuristicForNodesWithCoordinate;
-import com.lamontd.adventofcode.utils.astar.NodeWithCoordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 
 import java.util.concurrent.ThreadLocalRandom;
 

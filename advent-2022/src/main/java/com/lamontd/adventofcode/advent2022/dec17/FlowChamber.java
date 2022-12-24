@@ -1,6 +1,6 @@
 package com.lamontd.adventofcode.advent2022.dec17;
 
-import com.lamontd.adventofcode.utils.BigCoordinate;
+import com.lamontd.adventofcode.utils.coord.BigCoordinate;
 import org.apache.commons.lang3.StringUtils;
 import org.javatuples.Pair;
 import org.javatuples.Quartet;

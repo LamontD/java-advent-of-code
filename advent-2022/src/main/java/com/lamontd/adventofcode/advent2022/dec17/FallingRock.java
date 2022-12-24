@@ -1,7 +1,7 @@
 package com.lamontd.adventofcode.advent2022.dec17;
 
-import com.lamontd.adventofcode.utils.BigCoordinate;
-import com.lamontd.adventofcode.utils.Coordinate;
+import com.lamontd.adventofcode.utils.coord.BigCoordinate;
+import com.lamontd.adventofcode.utils.coord.Coordinate;
 
 import java.util.List;
 import java.util.stream.Collectors;
