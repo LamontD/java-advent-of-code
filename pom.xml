@@ -13,6 +13,7 @@
     <module>advent-2020</module>
     <module>advent-2022</module>
     <module>advent-2021</module>
+    <module>advent-2023</module>
   </modules>
 
   <name>advent-of-code</name>
@@ -55,7 +56,7 @@
       <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.22</version>
+        <version>1.18.38</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -90,7 +91,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.22</version>
+      <version>1.18.38</version>
     </dependency>
 <!--    <dependency>-->
 <!--      <groupId>com.lamontd</groupId>-->
